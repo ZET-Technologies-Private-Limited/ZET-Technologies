@@ -260,29 +260,29 @@ export default function ZETTechnologies() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 32 }}>
             {[
               {
-                icon: "code", title: "Web Development",
-                desc: "Scalable, high-performance websites built with the latest technologies like Next.js, React, and robust backend systems.",
-                features: ["Responsive Architecture", "SEO Optimization", "CMS Integration"]
+                icon: "code", title: "Full-Stack Development",
+                desc: "Custom web apps, SaaS products, and startup MVPs built with React, Node.js, and robust backend systems. From dashboards to real-time apps.",
+                features: ["SaaS & MVP Development", "API & Real-time Systems", "Admin Dashboards"]
               },
               {
-                icon: "token", title: "UI/UX Design",
-                desc: "User-centric interfaces that provide seamless digital experiences through intensive research and modern visual trends.",
-                features: ["User Journey Mapping", "High-fidelity Wireframes", "Prototyping"]
+                icon: "phone_android", title: "Mobile App Development",
+                desc: "Native Android apps and cross-platform solutions — ride-booking, food delivery, super apps, and UI-to-app conversions.",
+                features: ["Android (Java/Kotlin)", "Ride & Delivery Apps", "Super App Modules"]
               },
               {
-                icon: "developer_board", title: "Custom Software",
-                desc: "Bespoke software solutions tailored to your unique business needs, from ERP systems to automated workflow tools.",
-                features: ["Cloud Infrastructure", "API Development", "Legacy Migration"]
+                icon: "psychology", title: "AI-Based Products",
+                desc: "Intelligent AI solutions using ChatGPT, Gemini APIs — chatbots, automation bots, OCR systems, and AI SaaS tools.",
+                features: ["AI Chatbots & Automation", "OCR & Recommendation Systems", "Chrome Extensions & SaaS"]
               },
               {
-                icon: "phone_android", title: "App Development",
-                desc: "Native and cross-platform mobile applications built with React Native and Flutter for seamless iOS and Android experiences.",
-                features: ["Cross-Platform Apps", "Push Notifications", "Offline Support"]
+                icon: "cloud_upload", title: "DevOps & Deployment",
+                desc: "End-to-end deployment, CI/CD pipelines, server scaling, and performance optimization on AWS, Vercel, and Render.",
+                features: ["CI/CD Pipelines", "Docker & Kubernetes", "Performance Optimization"]
               },
               {
-                icon: "psychology", title: "Machine Learning",
-                desc: "Intelligent AI and ML solutions that transform your data into actionable insights, from predictive analytics to NLP models.",
-                features: ["Predictive Analytics", "NLP & Computer Vision", "Model Deployment"]
+                icon: "model_training", title: "Machine Learning",
+                desc: "Intelligent ML solutions — predictive analytics, NLP models, computer vision, and data-driven AI systems that transform your business insights.",
+                features: ["Predictive Analytics", "NLP & Computer Vision", "Model Training & Deployment"]
               }
             ].map(card => (
               <ServiceCard key={card.title} {...card} primary={PRIMARY} />
