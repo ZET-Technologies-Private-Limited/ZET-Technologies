@@ -273,6 +273,16 @@ export default function ZETTechnologies() {
                 icon: "developer_board", title: "Custom Software",
                 desc: "Bespoke software solutions tailored to your unique business needs, from ERP systems to automated workflow tools.",
                 features: ["Cloud Infrastructure", "API Development", "Legacy Migration"]
+              },
+              {
+                icon: "phone_android", title: "App Development",
+                desc: "Native and cross-platform mobile applications built with React Native and Flutter for seamless iOS and Android experiences.",
+                features: ["Cross-Platform Apps", "Push Notifications", "Offline Support"]
+              },
+              {
+                icon: "psychology", title: "Machine Learning",
+                desc: "Intelligent AI and ML solutions that transform your data into actionable insights, from predictive analytics to NLP models.",
+                features: ["Predictive Analytics", "NLP & Computer Vision", "Model Deployment"]
               }
             ].map(card => (
               <ServiceCard key={card.title} {...card} primary={PRIMARY} />
