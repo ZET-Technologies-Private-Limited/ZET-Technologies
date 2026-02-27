@@ -61,6 +61,8 @@ const styles = `
     border: 1.5px solid transparent;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    opacity: 0.5;
+    filter: grayscale(1);
   }
   .trusted-link:hover {
     transform: translateY(-4px) scale(1.08);
@@ -251,7 +253,7 @@ export default function ZETTechnologies() {
           }}>Trusted by industry leaders</p>
           <div style={{
             display: "flex", flexWrap: "wrap", justifyContent: "center",
-            alignItems: "center", gap: 48, opacity: 0.5, filter: "grayscale(1)"
+            alignItems: "center", gap: 48
           }}>
             {[
               { name: "Stripe", url: "https://stripe.com" },
