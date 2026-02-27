@@ -64,10 +64,10 @@ const styles = `
   }
   .trusted-link:hover {
     transform: translateY(-4px) scale(1.08);
-    background: #f1f5f9;
-    border-color: #cbd5e1;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    color: #0f172a !important;
+    background: ${PRIMARY};
+    border-color: ${PRIMARY};
+    box-shadow: 0 8px 24px rgba(59,43,238,0.3);
+    color: #ffffff !important;
     filter: none !important;
     opacity: 1 !important;
   }
