@@ -63,15 +63,17 @@ const styles = `
     cursor: pointer;
     opacity: 0.5;
     filter: grayscale(1);
+    color: #475569;
   }
   .trusted-link:hover {
     transform: translateY(-4px) scale(1.08);
-    background: ${PRIMARY};
-    border-color: ${PRIMARY};
+    background-color: ${PRIMARY} !important;
+    border-color: ${PRIMARY} !important;
     box-shadow: 0 8px 24px rgba(59,43,238,0.3);
     color: #ffffff !important;
-    filter: none !important;
+    filter: grayscale(0) !important;
     opacity: 1 !important;
+    -webkit-filter: grayscale(0) !important;
   }
 
   html { scroll-behavior: smooth; }
@@ -262,7 +264,7 @@ export default function ZETTechnologies() {
               { name: "Notion", url: "https://notion.so" },
               { name: "Figma", url: "https://figma.com" }
             ].map(({ name, url }) => (
-              <a key={name} href={url} target="_blank" rel="noopener noreferrer" className="trusted-link" style={{ fontSize: 22, fontWeight: 800, color: "#475569", letterSpacing: "-1px", textDecoration: "none" }}>{name}</a>
+              <a key={name} href={url} target="_blank" rel="noopener noreferrer" className="trusted-link" style={{ fontSize: 22, fontWeight: 800, letterSpacing: "-1px", textDecoration: "none" }}>{name}</a>
             ))}
           </div>
         </div>
