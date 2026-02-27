@@ -235,8 +235,14 @@ export default function ZETTechnologies() {
             display: "flex", flexWrap: "wrap", justifyContent: "center",
             alignItems: "center", gap: 48, opacity: 0.5, filter: "grayscale(1)"
           }}>
-            {["Stripe", "Linear", "Vercel", "Notion", "Figma"].map(name => (
-              <span key={name} style={{ fontSize: 22, fontWeight: 800, color: "#475569", letterSpacing: "-1px" }}>{name}</span>
+            {[
+              { name: "Stripe", url: "https://stripe.com" },
+              { name: "Linear", url: "https://linear.app" },
+              { name: "Vercel", url: "https://vercel.com" },
+              { name: "Notion", url: "https://notion.so" },
+              { name: "Figma", url: "https://figma.com" }
+            ].map(({ name, url }) => (
+              <a key={name} href={url} target="_blank" rel="noopener noreferrer" style={{ fontSize: 22, fontWeight: 800, color: "#475569", letterSpacing: "-1px", textDecoration: "none" }}>{name}</a>
             ))}
           </div>
         </div>
